@@ -1,0 +1,2 @@
+(window.webpackJsonpderiv_bot=window.webpackJsonpderiv_bot||[]).push([[30],{571:function(e){e.exports=JSON.parse('{"text":["Prompts for an input of either text or numbers with a specific display message.","User input is being passed to selected variable and can be used later."]}')}}]);
+//# sourceMappingURL=30-c4fd9c.bot.js.map
