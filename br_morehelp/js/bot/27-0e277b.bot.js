@@ -1,0 +1,2 @@
+(window.webpackJsonpderiv_bot=window.webpackJsonpderiv_bot||[]).push([[27],{566:function(t){t.exports=JSON.parse('{"text":["This block sells your active contract at market price. You don\'t necessarily need to sell your contract, however you might want to do it if the market trend is against you.","Example:"]}')}}]);
+//# sourceMappingURL=27-0e277b.bot.js.map
