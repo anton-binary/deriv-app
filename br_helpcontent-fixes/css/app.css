@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=latin,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese);
 /*------------------------------------*
  *  # Constants
  *------------------------------------*/
@@ -95,7 +95,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -318,7 +318,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -362,6 +362,16 @@
 
 .dc-popover__target__icon .info .color1-stroke {
   stroke: var(--text-less-prominent); }
+
+.dc-popover__target__icon .counter {
+  color: #ff444f;
+  color: var(--brand-red-coral);
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.4em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-65%); }
 
 .dc-popover__bubble {
   font-size: 1.2em;
@@ -536,7 +546,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -759,7 +769,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -792,7 +802,7 @@
   overflow: hidden;
   border-radius: 4px;
   transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.1, 0.25), opacity 0.25s cubic-bezier(0.25, 0.1, 0.1, 0.25);
-  background-color: var(--general-main-1);
+  background-color: var(--general-main-2);
   box-shadow: 0 4px 6px 0 var(--shadow-menu); }
 
 .dc-modal__container--hide {
@@ -935,7 +945,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -1080,7 +1090,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1375,7 +1385,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -1598,7 +1608,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -1793,7 +1803,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -1831,7 +1841,8 @@ html {
   transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
   outline: 0;
   position: relative;
-  background: var(--button-primary-default); }
+  background: var(--button-primary-default);
+  text-transform: none !important; }
 
 .btn__text {
   font-size: 1.4em;
@@ -1861,7 +1872,8 @@ html {
   text-decoration: none; }
 
 .btn--primary--default {
-  background: var(--button-primary-default); }
+  background: var(--button-primary-default);
+  color: var(--text-colored-background); }
 
 .btn--primary--default:hover:not([disabled]) {
   background: var(--button-primary-hover); }
@@ -1874,7 +1886,7 @@ html {
   cursor: not-allowed !important; }
 
 .btn--primary--default .btn__text {
-  color: #fff; }
+  color: var(--text-colored-background); }
 
 .btn--primary .btn__text {
   color: #fff; }
@@ -2056,7 +2068,8 @@ html {
   bottom: -0.1em;
   right: -0.1em;
   border-radius: inherit;
-  border: 0 solid #2a3052;
+  border: 0 solid #85acb0;
+  border: 0 solid var(--brand-secondary);
   opacity: 0.4;
   -webkit-animation: buttonEffect 0.4s;
           animation: buttonEffect 0.4s;
@@ -2068,10 +2081,13 @@ html {
   background-color: unset; }
 
 .btn .initial-loader--btn .initial-loader__barspinner--rect {
-  background-color: #fff; }
+  background-color: var(--text-colored-background); }
 
 .btn .initial-loader--btn .barspinner {
-  margin: 0 4px 0 -4px; }
+  margin: 0.6rem 4px 0 -4px; }
+
+.btn .initial-loader--btn .barspinner__rect {
+  height: 35%; }
 
 @-webkit-keyframes buttonEffect {
   to {
@@ -2187,7 +2203,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -2410,7 +2426,7 @@ html {
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -2623,7 +2639,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -2829,7 +2845,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3276,7 +3292,7 @@ html {
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -3482,7 +3498,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4764,14 +4780,11 @@ table {
 .send-email-template {
   padding: 0 16px; }
   .send-email-template__title {
+    color: var(--text-general);
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 0.8rem;
     line-height: 1.5; }
-    .theme--light .send-email-template__title {
-      color: rgba(0, 0, 0, 0.8); }
-    .theme--dark .send-email-template__title {
-      color: #7f8397; }
   .send-email-template__subtitle {
     font-size: 1.4rem;
     margin-bottom: 1.6rem; }
@@ -5094,11 +5107,8 @@ table {
     font-size: 1rem;
     align-self: flex-start;
     text-transform: none;
-    margin-bottom: 4px; }
-    .theme--light .contract-card .purchase-price__label, .theme--light .contract-card .potential-payout__label {
-      color: rgba(0, 0, 0, 0.8); }
-    .theme--dark .contract-card .purchase-price__label, .theme--dark .contract-card .potential-payout__label {
-      color: #7f8397; }
+    margin-bottom: 4px;
+    color: var(--text-general); }
   .contract-card .purchase-price__value, .contract-card .potential-payout__value {
     font-size: 1em;
     font-weight: bold;

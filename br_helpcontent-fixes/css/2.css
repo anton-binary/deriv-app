@@ -94,7 +94,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -317,7 +317,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -458,6 +458,9 @@
 
 .dc-dropdown__display--has-symbol {
   justify-content: unset; }
+
+.dc-dropdown__display--no-symbol .dc-dropdown__display-text {
+  padding: unset; }
 
 .dc-dropdown__display--no-border {
   border-color: var(--fill-normal); }
@@ -708,7 +711,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -736,8 +739,8 @@
   overflow-y: auto;
   z-index: 2;
   border-radius: 4px;
-  box-shadow: 0 2px 8px 0 var(--shadow-menu);
-  background: var(--state-normal); }
+  box-shadow: 0 8px 16px 0 var(--shadow-menu);
+  background: var(--general-main-2); }
 
 .dc-list--left {
   width: unset; }
@@ -931,7 +934,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -975,6 +978,16 @@
 
 .dc-popover__target__icon .info .color1-stroke {
   stroke: var(--text-less-prominent); }
+
+.dc-popover__target__icon .counter {
+  color: #ff444f;
+  color: var(--brand-red-coral);
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.4em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-65%); }
 
 .dc-popover__bubble {
   font-size: 1.2em;

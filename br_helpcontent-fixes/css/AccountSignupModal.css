@@ -94,7 +94,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -317,7 +317,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -442,7 +442,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -490,6 +490,10 @@
 .dc-input:focus-within:hover {
   border-color: #85acb0;
   border-color: var(--brand-secondary); }
+
+.dc-input__disabled {
+  border-color: var(--general-disabled);
+  color: var(--text-disabled); }
 
 .dc-input__field {
   background: none;
@@ -541,11 +545,11 @@
 .dc-input__field--placeholder-visible::placeholder {
   opacity: 0.2; }
 
-.dc-input__field:focus, .dc-input__field:disabled, .dc-input__field:not(:focus):valid {
+.dc-input__field:focus, .dc-input__field:disabled, .dc-input__field:not(:focus):not([value='']) {
   outline: none; }
 
-.dc-input__field:focus ~ label, .dc-input__field:disabled ~ label, .dc-input__field:not(:focus):valid ~ label {
-  transform: translate(0, -1.6rem) scale(0.75);
+.dc-input__field:focus ~ label, .dc-input__field:disabled ~ label, .dc-input__field:not(:focus):not([value='']) ~ label {
+  transform: translate(0, -1.8rem) scale(0.75);
   padding: 0 4px; }
 
 .dc-input__field:disabled {
@@ -579,7 +583,7 @@
 .dc-input__field:focus::placeholder {
   opacity: 0.4; }
 
-.dc-input__field:not(.dc-input--no-placeholder):not(:focus):valid ~ label {
+.dc-input__field:not(.dc-input--no-placeholder):not(:focus):not([value='']) ~ label {
   color: var(--text-general); }
 
 .dc-input__field[type=number]::-webkit-inner-spin-button, .dc-input__field[type=number]::-webkit-outer-spin-button {
@@ -618,7 +622,7 @@
   position: absolute;
   pointer-events: none;
   left: 1rem;
-  top: 1rem;
+  top: 1.3rem;
   transition: 0.25s ease all;
   transform-origin: top left; }
 
@@ -744,7 +748,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -790,13 +794,8 @@
   display: flex;
   align-items: center;
   padding: 1rem 1.6rem;
-  font-size: 1.4rem; }
-
-.theme--light .dc-dropdown-list__item {
-  color: rgba(0, 0, 0, 0.8); }
-
-.theme--dark .dc-dropdown-list__item {
-  color: #fff; }
+  font-size: 1.4rem;
+  color: var(--text-general); }
 
 .dc-dropdown-list__item:hover {
   background-color: var(--state-hover); }
@@ -894,7 +893,7 @@
   --button-tertiary-hover: rgba(255,68,79,0.0784314);
   --overlay-outside-dialog: rgba(0,0,0,0.721569);
   --overlay-inside-dialog: rgba(14,14,14,0.960784);
-  --shadow-menu: rgba(0,0,0,0.301961);
+  --shadow-menu: rgba(0,0,0,0.839216);
   --state-normal: #0e0e0e;
   --state-hover: #242828;
   --state-active: #323738;
@@ -1026,7 +1025,7 @@
     --button-tertiary-hover: rgba(255,68,79,0.07843);
     --overlay-outside-dialog: rgba(0,0,0,0.72157);
     --overlay-inside-dialog: rgba(14,14,14,0.96078);
-    --shadow-menu: rgba(0,0,0,0.30196);
+    --shadow-menu: rgba(0,0,0,0.83922);
     --state-normal: #0e0e0e;
     --state-hover: #242828;
     --state-active: #323738;
@@ -1171,7 +1170,7 @@ html {
 
 /* postcss-bem-linter: ignore */
 *, html, .body {
-  font-family: roboto, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
