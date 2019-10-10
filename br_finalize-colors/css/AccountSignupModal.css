@@ -561,6 +561,11 @@
 .dc-input__field:disabled ~ svg .color1-fill {
   fill: var(--text-disabled); }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .dc-input__field:disabled {
+      color: var(--text-prominent); } } }
+
 .dc-input__field:focus {
   outline: none; }
 
@@ -598,6 +603,14 @@
 .dc-input__field[type=textarea] ~ .dc-field-error {
   top: 10rem; }
 
+.dc-input__field:-webkit-autofill {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 30px var(--fill-normal) inset !important;
+  -webkit-text-fill-color: var(--text-prominent) !important; }
+
+.dc-input__field:-webkit-autofill:hover, .dc-input__field:-webkit-autofill:focus, .dc-input__field:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--fill-normal) inset !important; }
+
 .dc-input__leading-icon {
   margin-left: 1rem;
   top: 1rem;
@@ -622,7 +635,7 @@
   position: absolute;
   pointer-events: none;
   left: 1rem;
-  top: 1.3rem;
+  top: 0.9rem;
   transition: 0.25s ease all;
   transform-origin: top left; }
 
@@ -915,7 +928,8 @@
   --transparent-success: transparentize(#00a79e, 0.92); }
 
 .dc-autocomplete {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .dc-autocomplete__trailing-icon {
   position: absolute;
@@ -928,6 +942,30 @@
 
 .dc-autocomplete__trailing-icon--opened {
   transform: rotate(-180deg); }
+
+.dc-autocomplete__trailing-icon .color1-fill {
+  fill: var(--text-less-prominent); }
+
+.dc-autocomplete .dc-input--error .dc-autocomplete__trailing-icon .color1-fill {
+  fill: var(--text-loss-danger); }
+
+.dc-autocomplete .dc-dropdown-list {
+  box-shadow: 0 8px 16px 0 var(--shadow-menu);
+  background: var(--general-main-2); }
+
+.dc-autocomplete:focus, .dc-autocomplete[focus-within], .dc-autocomplete:active {
+  outline: 0; }
+
+.dc-autocomplete:focus, .dc-autocomplete:focus-within, .dc-autocomplete:active {
+  outline: 0; }
+
+.dc-autocomplete:focus .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete[focus-within] .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete:active .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill {
+  fill: #85acb0;
+  fill: var(--brand-secondary); }
+
+.dc-autocomplete:focus .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete:focus-within .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill, .dc-autocomplete:active .dc-input:not(.dc-input--error) .dc-autocomplete__trailing-icon .color1-fill {
+  fill: #85acb0;
+  fill: var(--brand-secondary); }
 
 /*------------------------------------*
  *  # Constants
